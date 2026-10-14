@@ -14,7 +14,7 @@ I built this project to learn how to train a machine learning model and connect 
 
 The frontend sends the message to the Flask backend as JSON. The backend loads the saved model, gets its scores, and sends the result back to the page. It does not retrain the model for each message.
 
-I removed exact duplicate messages and split the 5,171 unique examples into training, validation, and test groups. I compared a regular logistic regression model with one using balanced class weights and selected the balanced model using the validation results.
+I removed exact duplicate messages and split the 5,171 unique examples into training, validation, and test groups. I compared a regular logistic regression model with one using balanced class weighting.
 
 ## Results
 
@@ -25,7 +25,7 @@ On the separate test set of 1,035 messages, the selected model achieved:
 - Spam recall: 90.8%
 - Spam F1-score: 0.898
 
-These results are for the model's original spam/ham predictions. The app separately marks spam scores above 40% and below 60% as uncertain. That review range is experimental and is not included in these metrics. A score is a model estimate, and the app can still make mistakes.
+These results are for the model's original spam/ham predictions. The app separately marks spam scores above 60% as spam, below 40% as not spam, and scores between 40% and 60% as uncertain.
 
 ## Run locally on macOS
 
@@ -49,4 +49,4 @@ Open http://127.0.0.1:8000/ in a browser. You can also run `python predict.py` t
 
 ## Dataset
 
-I used the [UCI SMS Spam Collection](https://archive.ics.uci.edu/dataset/228/sms%2Bspam%2Bcollection) by Almeida and Hidalgo (2011), licensed under CC BY 4.0. It contains older SMS messages, so the test results may not reflect performance on newer messages.
+I used the [UCI SMS Spam Collection](https://archive.ics.uci.edu/dataset/228/sms%2Bspam%2Bcollection) by Almeida and Hidalgo (2011), licensed under CC BY 4.0. It contains older SMS messages; please follow the dataset license and attribution requirements when reusing the corpus.
