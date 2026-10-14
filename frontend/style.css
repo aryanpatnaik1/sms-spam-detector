@@ -1,0 +1,39 @@
+body
+{
+    background-color:darkolivegreen;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:mintcream;
+    padding: 24px;
+}
+textarea
+{
+    display:block;
+    width:100%;
+    max-width:500px;
+    padding:12px;
+    font-size:16px;
+    margin-top:8px;
+    margin-bottom:16px;
+    box-sizing:border-box;
+}
+#check-button
+{
+    background-color:cornsilk;
+    color:rgb(3, 30, 55);
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+#check-button:hover
+{
+    background-color:lightskyblue;
+}
+#result
+{
+    margin-top:45px;
+    margin-left:auto;
+    font-weight:bold;
+    font-size:18px;
+}
