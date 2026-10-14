@@ -1,8 +1,8 @@
 body
 {
-    background-color:darkolivegreen;
+    background-color:#0f172a;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:mintcream;
+    color:#e2e8f0;
     padding: 24px;
 }
 textarea
@@ -18,8 +18,8 @@ textarea
 }
 #check-button
 {
-    background-color:cornsilk;
-    color:rgb(3, 30, 55);
+    background-color:#38bdf8;
+    color:#082f49;
     padding:12px 20px;
     border:none;
     border-radius:8px;
@@ -28,7 +28,7 @@ textarea
 }
 #check-button:hover
 {
-    background-color:lightskyblue;
+    background-color:#7dd3fc;
 }
 #result
 {
